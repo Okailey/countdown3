@@ -1,0 +1,26 @@
+.news-container {
+    padding: 20px;
+  }
+  
+  .news-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .news-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .news-image {
+    height: 200px;
+    object-fit: cover;
+  }
+  

@@ -1,0 +1,42 @@
+.dailyForecast {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.daily-flex {
+    display: grid;
+    grid-template-columns: repeat(7, 1.5fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Box styling for each day's weather item */
+.daily-item {
+    background-color: #a6afb8;
+    color: azure;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect to make the boxes interactive */
+.daily-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for the weather icon */
+.daily-item img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/* Make it responsive: 1 box per row on small screens */
+@media (max-width: 600px) {
+    .daily-flex {
+        grid-template-columns: 1fr;
+        /* 1 box per row on mobile */
+    }
+}
